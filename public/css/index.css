@@ -1,0 +1,80 @@
+.responsive-img {
+  width: 100%;
+  max-width: 500px;
+  /* Optional: Set a maximum width for the image */
+  height: auto;
+  /* Maintains the aspect ratio */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  background-color: #FCF5E5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #FFD700;
+  /* Gold-like color to match the warm palette */
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  margin-bottom: 20px;
+  /* Spacing below the navbar */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  /* Center-align the navigation items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  /* Space between nav items */
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 18px;
+  /* Matches body font size */
+  font-weight: bold;
+  /* Emphasized for visibility */
+  color: #444;
+  /* Matches text color */
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #FCF5E5;
+  /* Matches background, providing subtle contrast */
+  color: #222;
+  /* Darker shade for emphasis */
+  border-radius: 4px;
+  /* Adds a soft hover effect */
+}
+
+.nav-item a.active {
+  background-color: #FCF5E5;
+  /* Highlight active page */
+  color: #111;
+  /* Strong contrast for readability */
+  border-radius: 4px;
+}

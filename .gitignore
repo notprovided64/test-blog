@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+_site/
+
+# Temporary files
+*.tmp
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.backup
+
+# Eleventy cache (if applicable)
+.cache/
+
