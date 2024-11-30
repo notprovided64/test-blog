@@ -9,9 +9,10 @@
 </head>
 
 <body>
-  {% include "navbar.liquid" %}
   <header>
-    <h1>{{ title | default: "glorpin" }}</h1>
+    {% include "navbar.liquid" %}
+    <hr class="solid">
+    <h1>{{ title | default: "glorpin zopp gak shul" }}</h1>
   </header>
   <main>
     {{ content }}

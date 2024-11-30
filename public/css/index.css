@@ -10,14 +10,24 @@
   margin-right: auto;
 }
 
+a {
+  color: white;
+}
+
+hr.solid {
+  border-left: 1px solid #bbb;
+}
+
 body {
   margin: 40px auto;
   max-width: 650px;
+  /*margin-top: 0;*/
   line-height: 1.6;
   font-size: 18px;
-  color: #444;
+  color: #ffffff;
   padding: 0 10px;
-  background-color: #FCF5E5;
+  background-color: #202023;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -26,55 +36,57 @@ h3 {
   line-height: 1.2
 }
 
-/* Navigation Bar Styling */
 nav {
-  background-color: #FFD700;
-  /* Gold-like color to match the warm palette */
-  padding: 10px 20px;
-  border-radius: 8px;
-  /* Rounded corners for a softer look */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
-  margin-bottom: 20px;
-  /* Spacing below the navbar */
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  backdrop-filter: blur(5px);
+
+}
+
+.navtitle {
+  justify-content: left;
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
-  /* Center-align the navigation items */
+  justify-content: left;
   list-style: none;
-  padding: 0;
+  padding-left: 10px;
+  padding-top: 5px;
   margin: 0;
   gap: 20px;
-  /* Space between nav items */
+  width: 100%;
+  background-color: rgba(32 32 35, 0.5);
 }
 
 .nav-item a {
   text-decoration: none;
   font-size: 18px;
-  /* Matches body font size */
-  font-weight: bold;
-  /* Emphasized for visibility */
-  color: #444;
-  /* Matches text color */
-  padding: 8px 12px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #5cd5fb;
+  /*padding: 8px 12px;*/
+  /*padding-right: 10px;*/
+  transition: text-decoration 0.9s ease, color 0.9s ease;
 }
 
 .nav-item a:hover {
-  background-color: #FCF5E5;
-  /* Matches background, providing subtle contrast */
-  color: #222;
-  /* Darker shade for emphasis */
-  border-radius: 4px;
-  /* Adds a soft hover effect */
+  text-decoration: underline;
 }
 
 .nav-item a.active {
-  background-color: #FCF5E5;
-  /* Highlight active page */
-  color: #111;
-  /* Strong contrast for readability */
-  border-radius: 4px;
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  background-color: white;
+  border: 0;
+  height: 1px;
+  margin: 0;
+  width: 100%;
 }
